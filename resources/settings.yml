@@ -1,0 +1,11 @@
+---
+# Enable or disable recording of the chat.
+ChatLog: true
+
+# Decide for yourself what the log format should look like.
+# {date} - What date we have
+# {time} - What time is it
+# {name} - Who wrote the message
+# {message} - Which message was written
+Format: "{date} | {time} | {name} > {message}"
+...
