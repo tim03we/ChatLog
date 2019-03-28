@@ -21,7 +21,7 @@ class EventListener implements Listener {
         $timeformat = new \DateTime('now');
         $date = $timeformat->format("Y-m-d");
         $time = $timeformat->format("H:i:s");
-        if(!file_exists($time . ".yml")) {
+        if(!file_exists($date . ".yml")) {
             $log = new Config($this->plugin->getDataFolder() . "logs/" . $date . ".yml", Config::YAML);
         }
         $log = new Config($this->plugin->getDataFolder() . "logs/" . $date . ".yml", Config::YAML);
